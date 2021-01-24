@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/sinework/restaurant-page#readme",
   "devDependencies": {
+    "bootstrap": "^4.6.0",
     "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.15.0",
