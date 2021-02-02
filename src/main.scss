@@ -8,6 +8,12 @@ body, html, #content{
     line-height: 1.8em;
     color: #666;
 }
+a{
+    color: white;
+}
+a:active, a:hover{
+    color:#dd2c00;
+}
 h1,
 h2,
 h3,
@@ -17,16 +23,18 @@ h6 {
   font-family: 'Raleway';
   color: orange;
 }
+img{
+    object-fit: cover;
+}
 
 p {
   line-height: 1.75;
   color: #666;
 }
 
-.text-faded {
-  color: rgba(255, 255, 255, 0.3);
-}
-.img1,.img2,.img3{
+
+
+.img1,.img2,.img3, .img1-menu{
     position: relative;
     
     background-position: center;
@@ -37,21 +45,26 @@ p {
     background-attachment: fixed;
 }
 .img1{
-    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./imgs/1.jpg");
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./assets/images/1.jpg");
     min-height: 100%;
   
    
 }
-
+.img1-menu{
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./assets/images/1.jpg");
+    min-height: 40vh;
+  
+   
+}
 .img2{
-    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./imgs/2.jpg");
-    min-height: 45vh;
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./assets/images/2.jpg");
+    max-height: 45vh;
   
 }
 
 .img3{
-    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./imgs/3.jpg");
-    min-height: 45vh;
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("./assets/images/3.jpg");
+    max-height: 45vh;
   
 }
 .section{
@@ -59,6 +72,15 @@ p {
     padding: 50px 80px;
     background-color: #4d1010;
     height: 60vh;
+      
+}
+.section-card{
+    text-align: center;
+    padding: 50px 80px;
+    
+    
+    background-color: #4d1010;
+  
       
 }
 .section-light{
@@ -77,6 +99,15 @@ p {
     
    
 }
+.menu-card{
+    width:500px;
+    background-color: rgb(253, 243, 243);
+    margin:10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    height: 150px;
+    box-shadow: 5px 10px 15px;
+}
 
 .header-span{
     position: absolute;
@@ -88,12 +119,31 @@ p {
     font-size: 400%;
     letter-spacing: 8px;
 }
+.header-span-menu{
+    position: absolute;
+    top:25%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-family: "Lato",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 150%;
+    letter-spacing: 8px;
+}
+
 .nav-bg{
     background-color: #663232;
     color: #dd2c00;
     top: 20em;
-    /* width: 50%; */
+     width: 50%; 
     margin-left: 25%;
+}
+.nav-bg-menu{
+    background-color: #663232;
+    color: #dd2c00;
+    // top: 20em;
+    width: 65%;
+    margin:0 auto 30px auto; 
+    // margin-left: 25%;
 }
 .card-section{
     height: 50vh;
@@ -130,4 +180,22 @@ p {
       margin-left: 40px;
       border-radius: 5%;
       margin-top: 20px;
+  }
+
+  .about-card{
+      width: 60%;
+      height: 50vh;
+      margin: auto;
+      background-color:white ;
+      border-radius: 10px;
+      .headerT{
+          text-align: center;
+          font-size: 25px;
+          font-weight: 600;
+      }
+      .about-paragraph{
+
+      }
+
+
   }
