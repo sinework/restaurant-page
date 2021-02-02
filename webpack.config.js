@@ -1,32 +1,32 @@
 const path = require('path');
 
 module.exports = {
-  mode:'development',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  module:{
+  module: {
     rules: [
       {
         test: /\.scss$/,
-        use:['style-loader', 'css-loader','sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.html$/,
-        use:['html-loader']
+        use: ['html-loader'],
       },
       {
         test: /\.(svg|png|jpeg|jpg|gif)$/,
-        use:{
-          loader:"file-loader",
+        use: {
+          loader: 'file-loader',
           options: {
-            name:"[name].[ext]",
-            outputPath:"imgs"
-          }
-        }
-      }
-    ]
-  }
+            name: '[name].[ext]',
+            outputPath: 'imgs',
+          },
+        },
+      },
+    ],
+  },
 };
